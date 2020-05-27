@@ -1,0 +1,351 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Learn how to build ASP.NET apps that can run anywhere.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    There are powerful new features in Visual Studio for building modern web apps.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Application uses</h2>
+        <ul>
+            <li>Sample pages using ASP.NET Core MVC</li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
+            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+            <li>Entity Framework</li>
+            <li>SQL Server on RHEL</li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>How to</h2>
+        <ul>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Overview</h2>
+        <ul>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Run &amp; Deploy</h2>
+        <ul>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-md-12">
+  <h1> Seeting up the environment </h1>
+  
+
+  <p><strong>Install dot net framework on RHEL</strong></p>
+<p><span style="font-weight: 400;">1 - install</span></p>
+<p><span style="font-weight: 400;">$ sudo yum install rh-dotnet20 -y</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">2 - Enable dotnet on shell</span></p>
+<p><span style="font-weight: 400;">$ scl enable rh-dotnet20 bash</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">3 - get the .net core version</span></p>
+<p><span style="font-weight: 400;">$ dotnet --version</span></p>
+<p><br /><br /></p>
+<p><strong>Install SQL Server on RHEL</strong></p>
+<p><span style="font-weight: 400;">Documentation </span></p>
+<p><a href="https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-red-hat"><span style="font-weight: 400;">https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-red-hat</span></a></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">1 - download sql server repo configuration file</span></p>
+<p><span style="font-weight: 400;">$ sudo curl -o /etc/yum.repos.d/mssql-server.repo</span><a href="https://packages.microsoft.com/config/rhel/7/mssql-server.repo"> <span style="font-weight: 400;">https://packages.microsoft.com/config/rhel/7/mssql-server.repo</span></a></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">2 - update yum and install mssql-server</span></p>
+<p><span style="font-weight: 400;">$ sudo yum update</span></p>
+<p><span style="font-weight: 400;">$ sudo yum install -y mssql-server</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">3 - run sql server setup to choose your edition and set the SA password</span></p>
+<p><span style="font-weight: 400;">$ sudo /opt/mssql/bin/mssql-conf setup</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">4 - check server status and make sure it is active and running</span></p>
+<p><span style="font-weight: 400;">$ systemctl status mssql-server</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">5 - open port for remote connection </span></p>
+<p><span style="font-weight: 400;">$ sudo firewall-cmd --zone=public --add-port=1433/tcp --permanent</span></p>
+<p><span style="font-weight: 400;">$ sudo firewall-cmd --reload</span></p>
+<p>&nbsp;</p>
+<p><strong>install SQL Server command line tools</strong></p>
+<p><span style="font-weight: 400;">1 - Download the Microsoft Red Hat repository configuration file.</span></p>
+<p><span style="font-weight: 400;">$ sudo curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">2 - If you had a previous version of mssql-tools installed, remove any older unixODBC packages.</span></p>
+<p><span style="font-weight: 400;">$ sudo yum update</span></p>
+<p><span style="font-weight: 400;">$ sudo yum remove unixODBC-utf16 unixODBC-utf16-devel</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">3 - Run the following commands to install mssql-tools with the unixODBC developer package.</span></p>
+<p><span style="font-weight: 400;">$ sudo yum update</span></p>
+<p><span style="font-weight: 400;">$ sudo yum install -y mssql-tools unixODBC-devel</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">4 - add CLI tools to path </span></p>
+<p><span style="font-weight: 400;">For convenience, add /opt/mssql-tools/bin/ to your PATH environment variable. This enables you to run the tools without specifying the full path. Run the following commands to modify the PATH for both login sessions and interactive/non-login sessions:</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">$ echo 'export PATH="$PATH:/opt/mssql-tools/bin"' &gt;&gt; ~/.bash_profile</span></p>
+<p><span style="font-weight: 400;">$ echo 'export PATH="$PATH:/opt/mssql-tools/bin"' &gt;&gt; ~/.bashrc</span></p>
+<p><span style="font-weight: 400;">$ source ~/.bashrc</span></p>
+<p><br /><br /></p>
+<p><strong>Connect to SQL Server Locally </strong></p>
+<p><span style="font-weight: 400;">1 - connect</span></p>
+<p><span style="font-weight: 400;">$ sqlcmd -S localhost -U SA -P &lsquo;P@ssw0rd'</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">If successful, you should get to a sqlcmd command prompt: 1&gt;.</span></p>
+<p><span style="font-weight: 400;">2 - execute your SQL statements</span></p>
+<p><span style="font-weight: 400;">Write your statements, each in a separate line, and write &ldquo;GO&rdquo; to execute all commands</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">CREATE DATABASE dotnetDB</span></p>
+<p><span style="font-weight: 400;">GO</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">USE dotnetDB</span></p>
+<p><br /><br /></p>
+<p><strong>Create first mvc application</strong></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">1 - create mvc application</span></p>
+<p><span style="font-weight: 400;">$ mkdir mvc</span></p>
+<p><span style="font-weight: 400;">$ cd mvc</span></p>
+<p><span style="font-weight: 400;">$ dotnet new mvc</span></p>
+<p><span style="font-weight: 400;">$ dotnet restore</span></p>
+<p><span style="font-weight: 400;">$ dotnet run</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">2 - change default port</span></p>
+<p><span style="font-weight: 400;">default port is 5000, to change it, edit Program.cs and change following </span></p>
+<p><span style="font-weight: 400;">.UseStartup&lt;Startup&gt;() </span></p>
+<p><span style="font-weight: 400;">to .</span></p>
+<p><span style="font-weight: 400;">UseStartup&lt;Startup&gt;().UseUrls("http://*:8080")</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Start you application again to listen to port 8080</span></p>
+<p>&nbsp;</p>
+<p><strong>Add EF to you application </strong></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">the mvc.csproj file will look like this</span></p>
+<p><span style="font-weight: 400;">&lt;Project Sdk="Microsoft.NET.Sdk.Web"&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;PropertyGroup&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;TargetFramework&gt;netcoreapp2.0&lt;/TargetFramework&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;PublishWithAspNetCoreTargetManifest&gt;false&lt;/PublishWithAspNetCoreTargetManifest&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;/PropertyGroup&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;ItemGroup&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;/ItemGroup&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;ItemGroup&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;/ItemGroup&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">&lt;/Project&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Now we need to add required packages</span></p>
+<p><br /><br /></p>
+<p><span style="font-weight: 400;">$ </span><strong>dotnet</strong><span style="font-weight: 400;"> add package Microsoft.EntityFrameworkCore</span></p>
+<p><span style="font-weight: 400;">$ </span><strong>dotnet</strong><span style="font-weight: 400;"> add package Microsoft.EntityFrameworkCore.Design</span></p>
+<p><span style="font-weight: 400;">$ </span><strong>dotnet</strong><span style="font-weight: 400;"> add package Microsoft.EntityFrameworkCore.Tools.DotNet</span></p>
+<p><span style="font-weight: 400;">$ </span><strong>dotnet</strong><span style="font-weight: 400;"> add package Microsoft.EntityFrameworkCore.SqlServer</span></p>
+<p><span style="font-weight: 400;">$ </span><strong>dotnet</strong><span style="font-weight: 400;"> add package Microsoft.VisualStudio.Web.CodeGeneration.Design</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">$ </span><strong>dotnet</strong><span style="font-weight: 400;"> restore</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">now you need to edit mvc.csproj file and move the following line to another item group section after changing the reference to DotNetCliToolReference</span></p>
+<p><span style="font-weight: 400;">&lt;PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /&gt;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">to</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">&lt;DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /&gt;</span></p>
+<p>&nbsp;</p>
+<p><strong>Sample mvc.csproj file </strong></p>
+<p><span style="font-weight: 400;">&lt;Project Sdk="Microsoft.NET.Sdk.Web"&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;PropertyGroup&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;TargetFramework&gt;netcoreapp2.0&lt;/TargetFramework&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;PublishWithAspNetCoreTargetManifest&gt;false&lt;/PublishWithAspNetCoreTargetManifest&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;/PropertyGroup&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;ItemGroup&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;/ItemGroup&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;ItemGroup&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&lt;DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" /&gt;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;/ItemGroup&gt;</span></p>
+<p><span style="font-weight: 400;">&lt;/Project&gt;</span></p>
+<p>&nbsp;</p>
+<p><strong>Create the database</strong></p>
+<p><span style="font-weight: 400;">login to sql server using CLI and create the following database</span></p>
+<p><span style="font-weight: 400;">$ sqlcmd -S localhost -U SA -P &lsquo;P@ssw0rd&rsquo;</span></p>
+<p><br /><br /></p>
+<p><span style="font-weight: 400;">CREATE DATABASE [Blogging];</span></p>
+<p><span style="font-weight: 400;">GO</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">USE [Blogging];</span></p>
+<p><span style="font-weight: 400;">GO</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">CREATE TABLE [Blog] (</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;[BlogId] int NOT NULL IDENTITY,</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;[Url] nvarchar(max) NOT NULL,</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;CONSTRAINT [PK_Blog] PRIMARY KEY ([BlogId])</span></p>
+<p><span style="font-weight: 400;">);</span></p>
+<p><span style="font-weight: 400;">GO</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">CREATE TABLE [Post] (</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;[PostId] int NOT NULL IDENTITY,</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;[BlogId] int NOT NULL,</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;[Content] nvarchar(max),</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;[Title] nvarchar(max),</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;CONSTRAINT [PK_Post] PRIMARY KEY ([PostId]),</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;CONSTRAINT [FK_Post_Blog_BlogId] FOREIGN KEY ([BlogId]) REFERENCES [Blog] ([BlogId]) ON DELETE CASCADE</span></p>
+<p><span style="font-weight: 400;">);</span></p>
+<p><span style="font-weight: 400;">GO</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">INSERT INTO [Blog] (Url) VALUES</span></p>
+<p><span style="font-weight: 400;">('http://blogs.msdn.com/dotnet'),</span></p>
+<p><span style="font-weight: 400;">('http://blogs.msdn.com/webdev'),</span></p>
+<p><span style="font-weight: 400;">('http://blogs.msdn.com/visualstudio')</span></p>
+<p><span style="font-weight: 400;">GO</span></p>
+<p><strong>EF Scaffolding</strong></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">$ </span><strong>dotnet</strong><span style="font-weight: 400;"> ef dbcontext scaffold "Server=localhost;User Id=SA;Password=P@ssw0rd;Database=Blogging;Trusted_Connection=False;" Microsoft.EntityFrameworkCore.SqlServer -o Models</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">this will do a database scaffolding and generate the required models on Models folder ad provided with &ldquo;-o&rdquo; parameter</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">following files will be generated</span></p>
+<p><span style="font-weight: 400;">Blog.cs</span></p>
+<p><span style="font-weight: 400;">Post.cs</span></p>
+<p><span style="font-weight: 400;">BloggingContext.cs</span></p>
+<p><br /><br /></p>
+<p><span style="font-weight: 400;">Below is full documentation for scaffold ef command</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Usage: dotnet ef dbcontext scaffold [arguments] [options]</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Arguments:</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;CONNECTION&gt; &nbsp;The connection string to the database.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&lt;PROVIDER&gt; &nbsp;&nbsp;&nbsp;The provider to use. (E.g. Microsoft.EntityFrameworkCore.SqlServer)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Options:</span></p>
+<p><span style="font-weight: 400;"> &nbsp;-d|--data-annotations &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use attributes to configure the model (where possible). If omitted, only the fluent API is used.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;-c|--context &lt;NAME&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The name of the DbContext.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;-f|--force &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overwrite existing files.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;-o|--output-dir &lt;PATH&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The directory to put files in. Paths are relative to the project directory.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--schema &lt;SCHEMA_NAME&gt;... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The schemas of tables to generate entity types for.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;-t|--table &lt;TABLE_NAME&gt;... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The tables to generate entity types for.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--use-database-names &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use table and column names directly from the database.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--json &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show JSON output.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;-p|--project &lt;PROJECT&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The project to use.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;-s|--startup-project &lt;PROJECT&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The startup project to use.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--framework &lt;FRAMEWORK&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The target framework.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--configuration &lt;CONFIGURATION&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The configuration to use.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--runtime &lt;RUNTIME_IDENTIFIER&gt; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The runtime to use.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--msbuildprojectextensionspath &lt;PATH&gt; &nbsp;The MSBuild project extensions path. Defaults to "obj".</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--no-build &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't build the project. Only use this when the build is up-to-date.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;-h|--help &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show help information</span></p>
+<p><span style="font-weight: 400;"> &nbsp;-v|--verbose &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show verbose output.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--no-color &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't colorize output.</span></p>
+<p><span style="font-weight: 400;"> &nbsp;--prefix-output &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prefix output with level.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">sample command ro connect to sqlite</span></p>
+<p><span style="font-weight: 400;">$ dotnet ef dbcontext scaffold "Datasource=C:\ASPNET\APIApp\webbookmarks.db3" -o Models Microsoft.EntityFrameworkCore.Sqlite -c "APIAppDbContext" -f -a</span></p>
+<p><br /><br /></p>
+<p><strong>Externalize connection string</strong></p>
+<p><span style="font-weight: 400;">add connection string to appSettings.json</span></p>
+<p><br /><br /></p>
+<p><span style="font-weight: 400;">{</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;"ConnectionStrings": { &nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ldquo;DB_URL": &nbsp;"Server=localhost;User Id=SA;Password=P@ssw0rd;Database=Blogging;Trusted_Connection=False;"</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p><span style="font-weight: 400;"> &nbsp;&nbsp;&nbsp;}</span></p>
+<p><span style="font-weight: 400;">}</span></p>
+<p><br /><br /></p>
+<p><strong>Add new Controller along with Views</strong></p>
+<p><br /><br /></p>
+<p><span style="font-weight: 400;">$ </span><strong>dotnet</strong><span style="font-weight: 400;"> aspnet-codegenerator --project . controller -name BlogController -m Blog -dc BloggingContext -outDir Controllers -f</span></p>
+<p><br /><br /></p>
+<p><span style="font-weight: 400;">$ </span><strong>dotnet</strong><span style="font-weight: 400;"> aspnet-codegenerator --project . controller -name PostController -m Post -dc BloggingContext -outDir Controllers -f</span></p>
+<p><br /><br /></p>
+
+
+
+
+
+ </div>
+</div>
